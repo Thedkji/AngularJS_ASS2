@@ -1,0 +1,20 @@
+<table class="table w-75 m-auto text-center mt-5 shadow-lg table-striped">
+  <thead>
+    <tr>
+        <th colspan="2" class="border-0"><h4>Categories</h4></th>
+      </tr>
+  </thead>
+
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tr ng-repeat="dm in danhmuc">
+    <td>{{ dm.id }}</td>
+    <td>{{ dm.name }}</td>
+  </tr>
+
+</table>
