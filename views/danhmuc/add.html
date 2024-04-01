@@ -1,0 +1,17 @@
+<button class="m-4 btn btn-primary"><a href="#!/danhmuc/list" class="text-white text-decoration-none">Quay lại</a></button>
+<form action="" class="border border-1 w-50 p-3 text-center m-auto d-flex flex-column gap-4 bg-white rounded-3 shadow-sm">
+    <h2>Thêm danh mục</h2>
+    <div>
+        <label for="" class="form-label">Tên danh mục</label>
+        <div class="mb-2"></div>
+        <div>
+            <input type="text" ng-model="valueDM.name" class="form-control w-50 m-auto">
+        </div>
+    </div>
+    <span ng-show="checkInputNameKoRong" class="text-danger">Không được để trống tên danh mục</span>
+    <span ng-show="checkInputNameKoPhaiChu" class="text-danger">Tên danh mục phải là số</span>
+
+    <div>
+        <button ng-click="onAdd()" class="btn btn-primary">Thêm</button>
+    </div>
+</form>

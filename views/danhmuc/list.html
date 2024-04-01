@@ -1,20 +1,29 @@
-<table class="table w-75 m-auto text-center mt-5 shadow-lg table-striped">
+<table class="table w-75 m-auto text-center shadow-lg table-striped">
+  <button class="btn btn-primary ms-4 my-4">
+    <a href="#!/danhmuc/add" class="text-white text-decoration-none">Thêm danh mục</a>
+  </button >
   <thead>
     <tr>
-        <th colspan="2" class="border-0"><h4>Categories</h4></th>
-      </tr>
+      <th colspan="4" class="border-0"><h4>Categories</h4></th>
+    </tr>
   </thead>
 
   <thead>
     <tr>
       <th>Id</th>
       <th>Name</th>
+      <th colspan="2">Chức năng</th>
     </tr>
   </thead>
 
   <tr ng-repeat="dm in danhmuc">
     <td>{{ dm.id }}</td>
     <td>{{ dm.name }}</td>
+    <td>
+      <button ng-click="onUpdate(dm.id)" class="btn btn-primary">Sửa</button>
+    </td>
+    <td>
+      <button ng-click="onDelete(dm.id)" class="btn btn-primary">Xóa</button>
+    </td>
   </tr>
-
 </table>

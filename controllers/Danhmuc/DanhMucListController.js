@@ -8,4 +8,15 @@ window.DanhMucListController = function ($scope,$http,$location){
         })
     }
     $scope.getData()
+
+    $scope.onDelete = function (id) {
+        let confirm =  window.confirm('Bạn có chắc chắn muốn xóa ko ?');
+        if(confirm){
+            $http.delete(`${apiUrl}/${id}`).then(function(reponse){
+                if(reponse.status == 200){
+                    $scope.getData();
+                }
+            })
+        }
+    }
 }
