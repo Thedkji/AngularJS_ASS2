@@ -31,7 +31,8 @@
       "img": "https://trungtran.vn/upload_images/images/products/acer-gaming/original/Nitro5-an515-58-redkb-black-gallery-01.webp",
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 2
+      "id_danhmuc": 2,
+      "id_status":1
     },
     {
       "id": "2",
@@ -40,7 +41,8 @@
       "img": "https://trungtran.vn/upload_images/images/products/lenovo-legion/large/legion_7_y9000x_irx9_2024%20(1).jpg",
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 2
+      "id_danhmuc": 2,
+      "id_status":1
     },
     {
       "id": "3",
@@ -49,7 +51,8 @@
       "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png",
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 1
+      "id_danhmuc": 1,
+      "id_status":1
     },
     {
       "id": "4",
@@ -58,7 +61,21 @@
       "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-tab-s9-fe-mint-13_1.jpg",
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 3
+      "id_danhmuc": 3,
+      "id_status":1
+    }
+  ],
+  "Status":[
+    {
+      "id":1,
+      "name" : "Còn hàng"
+    },
+    {
+      "id":2,
+      "name" : "Đang nhập hàng"
+    },{
+      "id":3,
+      "name" : "Hết hàng"
     }
   ]
 }

@@ -16,8 +16,14 @@ angular.module('myRoute',['ngRoute']).config(($routeProvider)=>{
 
     .when("/sanpham/list",{
         templateUrl:"views/sanpham/list.html",
-        controller: 
+        controller: SanphamListController
     })
+
+    .when("/sanpham/add",{
+        templateUrl:"views/sanpham/add.html",
+        controller: SanphamAddController
+    })
+
     .otherwise({
         templateUrl : "views/main.html"
     })

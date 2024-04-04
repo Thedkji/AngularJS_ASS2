@@ -1,0 +1,36 @@
+<a href="#!/sanpham/list">Quay lại</a>
+<div class="w-50 m-auto mt-4 border rounded-2 shadow-lg">
+    <form action="" class=" w-75 m-auto p-3">
+        <h2 class="text-center mb-3">Thêm sản phẩm</h2>
+        <label for="" class="form-label">Tên sản phẩm</label>
+        <input type="text" class="form-control" ng-model = "valueSP.Name">
+        <div class="text-danger" ng-show="err.NameEmpty">Không được để trống tên sản phẩm</div>
+        <div class="text-danger" ng-show="err.NameLength">Tên sản phẩm phải lớn hơn 3 ký tự</div>
+        <div class="text-danger" ng-show="err.NameNotNumber">Tên sản phẩm không được chứa ký tự đặc biệt và 3 số đầu phải là chữ (có thể có dấu _)</div>
+        <div class="text-danger" ng-show="err.NameDuplication">Tên sản phẩm đã tồn tại</div>
+
+        <label for="" class="form-label" >Giá sản phẩm</label>
+        <input type="number" class="form-control" ng-model="valueSP.Price">
+        <div class="text-danger" ng-show="err.PriceEmpty">Không được để trống giá</div>
+        <div class="text-danger" ng-show="err.PriceInteger">Giá sản phẩm phải là số nguyên dương</div>
+
+        <label for="" class="form-label" ng-model="valueSP.Img">Ảnh</label>
+        <input type="text" class="form-control">
+        
+        <label for="" class="form-label">Danh mục</label>
+        <select name="" id="" class="form-select" ng-model = "valueSP.DanhMuc">
+            <option value="">Chọn danh mục ---</option>
+            <option ng-repeat="dm in danhmuc" value="{{ dm.id }}" >{{ dm.name }}</option>
+        </select>
+        <div class="text-danger" ng-show="err.DanhMucEmpty">Chưa chọn danh mục</div>
+
+        <label for="" class="form-label">Trạng thái</label>
+        <select name="" id="" class="form-select" ng-model="valueSP.Status">
+            <option value="">Chọn trạng thái ---</option>
+            <option ng-repeat="st in status" value="{{ st.id }}">{{ st.name }}</option>
+        </select>
+        <div class="text-danger" ng-show="err.StatusEmpty">Chưa chọn trạng thái</div>
+        <div class="mt-4"></div>
+        <button ng-click = "btn_ThemSP()"class="btn btn-primary m-auto d-block">Thêm sản phẩm</button>
+    </form>
+</div>

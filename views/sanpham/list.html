@@ -1,0 +1,29 @@
+<div class="w-100">
+    <button><a href="#!sanpham/add">Thêm sản phẩm</a></button>
+    <table class="table text-center">
+        <h2 class="text-center my-3">Sản Phẩm</h2>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Img</th>
+            <th>Creat at</th>
+            <th>Update at</th>
+            <th>Id_danhmuc</th>
+            <th>Status</th>
+            <th colspan="2">Chức năng</th>
+        </tr>
+        <tr ng-repeat="pro in products">
+            <td>{{ pro.id }}</td>
+            <td>{{ pro.name }}</td>
+            <td>{{ pro.price | number}}</td>
+            <td class=" w-25"><img src="{{ pro.img }}" alt="" width="50%" height="auto" class=""></td>
+            <td>{{ pro.create_at }}</td>
+            <td>{{ pro.update_at }}</td>
+            <td>{{ pro.id_danhmuc }}</td>
+            <td>{{ pro.id_status }}</td>
+            <td><button><a href="">Sửa</a></button></td>
+            <td><button><a href="">Xóa</a></button></td>
+        </tr>
+    </table>
+</div>
