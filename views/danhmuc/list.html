@@ -12,6 +12,8 @@
     <tr>
       <th>Id</th>
       <th>Name</th>
+      <th>Create at</th>
+      <th>Update at</th>
       <th colspan="2">Chức năng</th>
     </tr>
   </thead>
@@ -19,6 +21,8 @@
   <tr ng-repeat="dm in danhmuc">
     <td>{{ dm.id }}</td>
     <td>{{ dm.name }}</td>
+    <td>{{ dm.create_at }}</td>
+    <td>{{ dm.update_at }}</td>
     <td>
       <button ng-click="onUpdate(dm.id)" class="btn btn-primary">Sửa</button>
     </td>

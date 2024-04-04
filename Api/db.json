@@ -1,16 +1,64 @@
 {
   "danhmuc": [
     {
+      "id": "1b77",
+      "name": "Điện thoại",
+      "create_at": "4/4/2024 14:18"
+    },
+    {
+      "id": "9c81",
+      "name": "Laptop",
+      "create_at": "4/4/2024 14:18",
+      "update_at": "4/4/2024 14:18"
+    },
+    {
+      "id": "8dfd",
+      "name": "Tablet",
+      "create_at": "4/4/2024 14:18"
+    },
+    {
+      "id": "4b90",
+      "name": "a_",
+      "create_at": "4/4/2024 14:18",
+      "update_at": "4/4/2024 14:19"
+    }
+  ],
+  "sanpham": [
+    {
       "id": "1",
-      "name": "Điện thoại"
+      "name": "acer nitro 5",
+      "price": 15000000,
+      "img": "https://trungtran.vn/upload_images/images/products/acer-gaming/original/Nitro5-an515-58-redkb-black-gallery-01.webp",
+      "create_at": "4/4/2024 14:18",
+      "update_at": "4/4/2024 14:19",
+      "id_danhmuc": 2
     },
     {
       "id": "2",
-      "name": "Laptop"
+      "name": "Lenovo Legion 7",
+      "price": 50500000,
+      "img": "https://trungtran.vn/upload_images/images/products/lenovo-legion/large/legion_7_y9000x_irx9_2024%20(1).jpg",
+      "create_at": "4/4/2024 14:18",
+      "update_at": "4/4/2024 14:19",
+      "id_danhmuc": 2
     },
     {
       "id": "3",
-      "name": "Tablet"
+      "name": "Iphone 15 pro max",
+      "price": 29500000,
+      "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png",
+      "create_at": "4/4/2024 14:18",
+      "update_at": "4/4/2024 14:19",
+      "id_danhmuc": 1
+    },
+    {
+      "id": "4",
+      "name": "Samsung Galaxy Tab S9",
+      "price": 9890000,
+      "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-tab-s9-fe-mint-13_1.jpg",
+      "create_at": "4/4/2024 14:18",
+      "update_at": "4/4/2024 14:19",
+      "id_danhmuc": 3
     }
   ]
 }

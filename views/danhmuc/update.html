@@ -1,0 +1,16 @@
+<button class="btn btn-primary mt-3 ms-3"><a href="#!/danhmuc/list" class="text-white text-decoration-none">Quay lại</a></button>
+<div class="w-75 bg-white shadow-lg m-auto text-center p-4">
+    <form action="">
+        <h2>Update danh mục</h2>
+        
+        <label for="" class="form-label">ID</label>
+        <input type="text" class="form-control w-25 rounded-0 m-auto" ng-model="valueUpdateDM.id" readonly>
+        <label for="" class="form-label">Tên danh mục</label>
+        <input type="text"  class="form-control w-25 m-auto rounded-0" ng-model="valueUpdateDM.name">
+        <span ng-show="err.nameEmpty" class="text-danger">Không được để trống tên danh mục</span>
+        <span ng-show="err.notNumber" class="text-danger">Tên danh mục phải là chữ và ko có ký tự đặc biệt có thể có dấu _</span>
+        <span ng-show="err.Duplication" class="text-danger">Tên danh mục đã tồn tại vui lòng chọn tên khác</span>
+        <div class="mb-3"></div>
+        <button  class="btn btn-primary" ng-click="btnSuaDM()">Sửa danh mục</button>
+    </form>
+</div>

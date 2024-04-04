@@ -19,4 +19,8 @@ window.DanhMucListController = function ($scope,$http,$location){
             })
         }
     }
+
+    $scope.onUpdate = function(id) {
+        $location.path(`/danhmuc/update/${id}`)
+    }
 }

@@ -8,8 +8,9 @@
             <input type="text" ng-model="valueDM.name" class="form-control w-50 m-auto">
         </div>
     </div>
-    <span ng-show="checkInputNameKoRong" class="text-danger">Không được để trống tên danh mục</span>
-    <span ng-show="checkInputNameKoPhaiChu" class="text-danger">Tên danh mục phải là số</span>
+    <span ng-show="err.nameEmpty" class="text-danger">Không được để trống tên danh mục</span>
+    <span ng-show="err.notNumber" class="text-danger">Tên danh mục phải là chữ và ko có ký tự đặc biệt có thể có dấu _</span>
+    <span ng-show="err.Duplication" class="text-danger">Tên danh mục đã tồn tại vui lòng chọn tên khác</span>
 
     <div>
         <button ng-click="onAdd()" class="btn btn-primary">Thêm</button>
