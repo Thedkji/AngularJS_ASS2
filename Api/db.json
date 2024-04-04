@@ -1,23 +1,23 @@
 {
   "danhmuc": [
     {
-      "id": "1b77",
+      "id": "1",
       "name": "Điện thoại",
       "create_at": "4/4/2024 14:18"
     },
     {
-      "id": "9c81",
+      "id": "2",
       "name": "Laptop",
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:18"
     },
     {
-      "id": "8dfd",
+      "id": "3",
       "name": "Tablet",
       "create_at": "4/4/2024 14:18"
     },
     {
-      "id": "4b90",
+      "id": "4",
       "name": "a_",
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19"
@@ -32,7 +32,7 @@
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
       "id_danhmuc": 2,
-      "id_status":1
+      "id_status": 1
     },
     {
       "id": "2",
@@ -42,7 +42,7 @@
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
       "id_danhmuc": 2,
-      "id_status":1
+      "id_status": 1
     },
     {
       "id": "3",
@@ -52,7 +52,7 @@
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
       "id_danhmuc": 1,
-      "id_status":1
+      "id_status": 1
     },
     {
       "id": "4",
@@ -62,20 +62,30 @@
       "create_at": "4/4/2024 14:18",
       "update_at": "4/4/2024 14:19",
       "id_danhmuc": 3,
-      "id_status":1
-    }
-  ],
-  "Status":[
-    {
-      "id":1,
-      "name" : "Còn hàng"
+      "id_status": 1
     },
     {
-      "id":2,
-      "name" : "Đang nhập hàng"
-    },{
-      "id":3,
-      "name" : "Hết hàng"
+      "id": "a223",
+      "name": "ađâsda",
+      "price": 123123,
+      "img": "https://trungtran.vn/images/products/2024/resized/in5430nt-cnb-00000ff090-sl-2pc.png",
+      "id_danhmuc": "3",
+      "id_status": "2",
+      "create_at": "4/4/2024 18:10"
+    }
+  ],
+  "Status": [
+    {
+      "id": "1",
+      "name": "Còn hàng"
+    },
+    {
+      "id": "2",
+      "name": "Đang nhập hàng"
+    },
+    {
+      "id": "3",
+      "name": "Hết hàng"
     }
   ]
 }

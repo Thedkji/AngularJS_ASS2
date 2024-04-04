@@ -9,7 +9,7 @@
             <th>Img</th>
             <th>Creat at</th>
             <th>Update at</th>
-            <th>Id_danhmuc</th>
+            <th>Danh mục</th>
             <th>Status</th>
             <th colspan="2">Chức năng</th>
         </tr>
@@ -20,10 +20,10 @@
             <td class=" w-25"><img src="{{ pro.img }}" alt="" width="50%" height="auto" class=""></td>
             <td>{{ pro.create_at }}</td>
             <td>{{ pro.update_at }}</td>
-            <td>{{ pro.id_danhmuc }}</td>
-            <td>{{ pro.id_status }}</td>
-            <td><button><a href="">Sửa</a></button></td>
-            <td><button><a href="">Xóa</a></button></td>
+            <td><span ng-repeat="dm in danhmuc" ng-if="pro.id_danhmuc==dm.id">{{ dm.name }}</span></td>
+            <td><span ng-repeat="st in status" ng-if="pro.id_status == st.id">{{ st.name }}</span></td>
+            <td><button ng-click="onUpdate(pro.id)">Sửa</a></button></td>
+            <td><button ng-click="onDelete(pro.id)">Xóa</a></button></td>
         </tr>
     </table>
 </div>
