@@ -23,6 +23,10 @@ angular.module('myRoute',['ngRoute']).config(($routeProvider)=>{
         templateUrl:"views/sanpham/add.html",
         controller: SanphamAddController
     })
+    .when("/sanpham/update/:id",{
+        templateUrl:"views/sanpham/update.html",
+        controller: SanphamUpdateController
+    })
 
     .otherwise({
         templateUrl : "views/main.html"

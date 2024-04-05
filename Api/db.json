@@ -3,7 +3,8 @@
     {
       "id": "1",
       "name": "Điện thoại",
-      "create_at": "4/4/2024 14:18"
+      "create_at": "4/4/2024 14:18",
+      "update_at": "5/4/2024 9:19"
     },
     {
       "id": "2",
@@ -25,53 +26,51 @@
   ],
   "sanpham": [
     {
-      "id": "1",
-      "name": "acer nitro 5",
-      "price": 15000000,
-      "img": "https://trungtran.vn/upload_images/images/products/acer-gaming/original/Nitro5-an515-58-redkb-black-gallery-01.webp",
-      "create_at": "4/4/2024 14:18",
-      "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 2,
-      "id_status": 1
-    },
-    {
-      "id": "2",
-      "name": "Lenovo Legion 7",
-      "price": 50500000,
-      "img": "https://trungtran.vn/upload_images/images/products/lenovo-legion/large/legion_7_y9000x_irx9_2024%20(1).jpg",
-      "create_at": "4/4/2024 14:18",
-      "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 2,
-      "id_status": 1
-    },
-    {
-      "id": "3",
-      "name": "Iphone 15 pro max",
-      "price": 29500000,
-      "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png",
-      "create_at": "4/4/2024 14:18",
-      "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 1,
-      "id_status": 1
-    },
-    {
-      "id": "4",
-      "name": "Samsung Galaxy Tab S9",
-      "price": 9890000,
-      "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-tab-s9-fe-mint-13_1.jpg",
-      "create_at": "4/4/2024 14:18",
-      "update_at": "4/4/2024 14:19",
-      "id_danhmuc": 3,
-      "id_status": 1
-    },
-    {
-      "id": "a223",
-      "name": "ađâsda",
-      "price": 123123,
-      "img": "https://trungtran.vn/images/products/2024/resized/in5430nt-cnb-00000ff090-sl-2pc.png",
-      "id_danhmuc": "3",
+      "id": "608d",
+      "name": "Alienware X14 R2",
+      "price": 37500000,
+      "img": "https://trungtran.vn/images/products/2023/resized/notebook-alienware-x14-r2-gray-gallery-3.png",
+      "id_danhmuc": "1",
       "id_status": "2",
-      "create_at": "4/4/2024 18:10"
+      "create_at": "5/4/2024 8:17",
+      "update_at": "5/4/2024 8:26"
+    },
+    {
+      "id": "37a8",
+      "name": "Alienware m15 R7",
+      "price": 37500000,
+      "img": "https://trungtran.vn/images/products/2024/resized/laptop-alienware-m15-r7-gallery-1__457x320.png",
+      "id_danhmuc": "2",
+      "id_status": "1",
+      "create_at": "5/4/2024 8:28"
+    },
+    {
+      "id": "940a",
+      "name": "Alienware m16",
+      "price": 38500000,
+      "img": "https://trungtran.vn/images/products/2024/resized/notebook-alienware-m16-hd-black-gallery-12.png",
+      "id_danhmuc": "2",
+      "id_status": "3",
+      "create_at": "5/4/2024 8:44"
+    },
+    {
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 26990000,
+      "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-vang-222.png",
+      "id_danhmuc": "3",
+      "id_status": "1",
+      "update_at": "5/4/2024 9:6",
+      "id": "b9ab"
+    },
+    {
+      "name": "iPhone 14 Pro Max",
+      "price": 26990000,
+      "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/v/_/v_ng_18.png",
+      "create_at": "5/4/2024 9:7",
+      "id_danhmuc": "1",
+      "id_status": "1",
+      "update_at": "5/4/2024 9:8",
+      "id": "6de5"
     }
   ],
   "Status": [

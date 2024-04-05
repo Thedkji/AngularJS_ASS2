@@ -10,6 +10,7 @@ window.SanphamListController = function ($scope, $http, $location) {
     });
   };
   $scope.getDaTa();
+  
 
   $scope.getDanhmuc = function () {
     $http.get(apiDM).then(function (res) {
@@ -35,4 +36,8 @@ window.SanphamListController = function ($scope, $http, $location) {
         });
     }
   };
+
+  $scope.onUpdate = function(id) {
+    $location.path(`/sanpham/update/${id}`)
+  }
 };

@@ -17,12 +17,13 @@ window.DanhMucUpdateController = function (
 
   $scope.btnSuaDM = function () {
     let flag = false;
-    let regexNotNumber = /^[a-zA-z\p{L}\s]+$/u; //\p{L}:cho phép nhập unicode , u:hậu tố của unicode
+    let regexNotNumber = /^[a-zA-z\p{L}\s]{2}[a-zA-z0-9\p{L}\s]+$/u; //\p{L}:cho phép nhập unicode , u:hậu tố của unicode
     //mảng chứa định nghĩa giá trị cho lỗi
     $scope.err = {
       nameEmpty: false,
       notNumber: false,
       Duplication: false,
+      NameLength :false
     };
 
     //lấy dữ liệu của danh mục
@@ -44,6 +45,9 @@ window.DanhMucUpdateController = function (
       } else if ($scope.isDuplication($scope.valueUpdateDM.name)) {
         $scope.err.Duplication = true;
         flag = true;
+      } else if($scope.valueUpdateDM.name.length <4){
+        $scope.err.NameLength = true;
+        flag=true;
       }
 
       //Nếu như ko lỗi thực hiện tạo mới item

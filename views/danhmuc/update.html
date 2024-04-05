@@ -8,8 +8,9 @@
         <label for="" class="form-label">Tên danh mục</label>
         <input type="text"  class="form-control w-25 m-auto rounded-0" ng-model="valueUpdateDM.name">
         <span ng-show="err.nameEmpty" class="text-danger">Không được để trống tên danh mục</span>
-        <span ng-show="err.notNumber" class="text-danger">Tên danh mục phải là chữ và ko có ký tự đặc biệt có thể có dấu _</span>
+        <span ng-show="err.notNumber" class="text-danger">Tên danh mục không được chứa ký tự đặc biệt và 3 số đầu phải là chữ (có thể có dấu _)</span>
         <span ng-show="err.Duplication" class="text-danger">Tên danh mục đã tồn tại vui lòng chọn tên khác</span>
+        <span class="text-danger" ng-show="err.NameLength">Tên sản phẩm phải lớn hơn 4 ký tự</span>
         <div class="mb-3"></div>
         <button  class="btn btn-primary" ng-click="btnSuaDM()">Sửa danh mục</button>
     </form>
