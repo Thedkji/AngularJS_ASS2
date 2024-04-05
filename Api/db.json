@@ -45,21 +45,22 @@
       "create_at": "5/4/2024 8:28"
     },
     {
-      "id": "940a",
       "name": "Alienware m16",
       "price": 38500000,
       "img": "https://trungtran.vn/images/products/2024/resized/notebook-alienware-m16-hd-black-gallery-12.png",
+      "create_at": "5/4/2024 8:44",
       "id_danhmuc": "2",
       "id_status": "3",
-      "create_at": "5/4/2024 8:44"
+      "update_at": "5/4/2024 9:57",
+      "id": "940a"
     },
     {
       "name": "Samsung Galaxy S24 Ultra",
       "price": 26990000,
       "img": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-vang-222.png",
       "id_danhmuc": "3",
-      "id_status": "1",
-      "update_at": "5/4/2024 9:6",
+      "id_status": "2",
+      "update_at": "5/4/2024 9:57",
       "id": "b9ab"
     },
     {

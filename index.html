@@ -36,7 +36,7 @@
 </style>
 
 <body>
-    <div ng-app="myRoute" class="container-fluid" >
+    <div ng-app="myRoute" class="container-fluid p-0" >
 
         <header class="">
             <div class="row">
@@ -71,83 +71,133 @@
         <div class="d-flex">
             <nav class="bg-white shadow-sm" style="width: 20%;">
                 <!-- Navigation -->
-                <div class="p-2" style="color:var(--text-main)">Navigation</div>
-    
-                <div class="row w-100 mt-3 ps-5">
-                    <div class="col-10">
-                        <span class="bi bi-columns-gap me-1"></span>
-                        <span>Dashboard</span>
+                <div class="accordion p-3" id="dashboardAccordion1">
+                    <div class="accordion-item border-0" style="color:var(--text-main)">Navigation</div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse1" aria-expanded="false" aria-controls="dashboardCollapse1">
+                                <span class="me-4">1</span>
+                                <span>Dashboard</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse1" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion1">
+                            <div class="accordion-body">
+                                <span class="me-4">1</span>
+                                <span class="">Widget</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
-    
-                    <div class="col">
-                        <span class="bi bi-gear gap me-1"></span>
-                        <span>Widgets</span>
-                    </div>
-                    <!-- <div class="col-2 bi bi-caret-down-fill"></div> -->
-                    <div class="mb-4"></div>
-    
-                    <div class="col-10">
-                        <span class="bi bi-envelope me-1"></span>
-                        <span>MailBox</span>
-                    </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
                 </div>
-    
-                <!--Components-->
-                <div class="p-2" style="color:var(--text-main)">Components</div>
-    
-                <div class="row w-100 mt-3 ps-5">
-                    <div class="col-10">
-                        <span class="bi bi-box me-1"></span>
-                        <span>Elements</span>
+            
+                <div class="accordion p-3" id="dashboardAccordion2">
+                    <div class="accordion-item border-0" style="color:var(--text-main)"></div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse2" aria-expanded="false" aria-controls="dashboardCollapse2">
+                                <span class="me-4">1</span>
+                                <span>MailBoxs</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse2" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion2">
+                            <div class="accordion-body">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
-    
-                    <div class="col">
-                        <span class="bi bi-gear gap me-1"></span>
-                        <span>Miscellaneous</span>
+                </div>
+
+                <!-- components -->
+                <div class="accordion p-3" id="dashboardAccordion3">
+                    <div class="accordion-item border-0" style="color:var(--text-main)">Components</div>
+
+                    <!-- Elements -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse3" aria-expanded="false" aria-controls="dashboardCollapse3">
+                                <span class="me-4">1</span>
+                                <span>Elements</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse3" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion3">
+                            <div class="accordion-body">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
-    
-                    <div class="col-10">
-                        <span class="bi bi-envelope me-1"></span>
-                        <span>Forms</span>
+
+                    <!-- Misscellaous -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse4" aria-expanded="false" aria-controls="dashboardCollapse4">
+                                <span class="me-4">1</span>
+                                <span>Misscellaous</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse4" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion4">
+                            <div class="accordion-body">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
-    
-                    <div class="col-10">
-                        <span class="bi bi-envelope me-1"></span>
-                        <span>Charts</span>
+
+                    <!-- Forms -->
+                    <!-- Misscellaous -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse5" aria-expanded="false" aria-controls="dashboardCollapse5">
+                                <span class="me-4">1</span>
+                                <span>Forms</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse5" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion5">
+                            <div class="accordion-body">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
-    
-                    <div class="col-10">
-                        <span class="bi bi-envelope me-1"></span>
-                        <span>Tables</span>
+
+                    <!-- Charts -->
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse6" aria-expanded="false" aria-controls="dashboardCollapse6">
+                                <span class="me-4">1</span>
+                                <span>Charts</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse6" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion6">
+                            <div class="accordion-body">
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div>
-    
-                    <div class="col-10">
-                        <span class="bi bi-envelope me-1"></span>
-                        <span><a href="#!/danhmuc/list">Danh mục</a></span>
+
+                      <!-- Tables -->
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardCollapse7" aria-expanded="false" aria-controls="dashboardCollapse7">
+                                <span class="me-4">1</span>
+                                <span>Tables</span>
+                            </button>
+                        </h2>
+                        <div id="dashboardCollapse7" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion7">
+                            <div class="accordion-body text-center">
+                                <span class=""></span>
+                                <span><a href="#!/danhmuc/list" class="text-decoration-none ">Danh mục</a></span>
+                            </div>
+                        </div>
+
+                        <div id="dashboardCollapse7" class="accordion-collapse collapse" data-bs-parent="#dashboardAccordion7">
+                            <div class="accordion-body text-center">
+                                <span class=""></span>
+                                <span><a href="#!/sanpham/list" class="text-decoration-none ">Sản phẩm</a></span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="col-2 bi bi-chevron-down"></div> -->
-                    <div class="mb-4"></div>
-    
-                    <div class="col-10">
-                        <span class="bi bi-envelope me-1"></span>
-                        <span><a href="#!/sanpham/list">Sản phẩm</a></span>
-                    </div>
-                    <!-- <div class="col-2 bi bi-chevron-down"></div>
-                    <div class="mb-4"></div> -->
                 </div>
             </nav>
     

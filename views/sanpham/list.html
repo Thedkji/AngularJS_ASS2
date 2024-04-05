@@ -1,8 +1,14 @@
+<style>
+    th,td{
+        vertical-align: middle;
+    }
+</style>
 <div class="w-100">
-    <button><a href="#!sanpham/add">Thêm sản phẩm</a></button>
-    <table class="table text-center">
-        <h2 class="text-center my-3">Sản Phẩm</h2>
-        <tr>
+    <button class="m-3 btn btn-primary"><a href="#!sanpham/add" class="text-white text-decoration-none">Thêm sản phẩm</a></button>
+    <table class="table text-center mb-3 table-striped table-hover">
+        <h4 class="text-center">Sản phẩm</h4>
+       <thead>
+        <tr class="">
             <th>ID</th>
             <th>Name</th>
             <th>Price</th>
@@ -13,17 +19,22 @@
             <th>Status</th>
             <th colspan="2">Chức năng</th>
         </tr>
-        <tr ng-repeat="pro in products">
-            <td>{{ pro.id }}</td>
-            <td>{{ pro.name }}</td>
-            <td>{{ pro.price | number}}</td>
-            <td class=" w-25"><img src="{{ pro.img }}" alt="" width="50%" height="auto" class=""></td>
-            <td>{{ pro.create_at }}</td>
-            <td>{{ pro.update_at }}</td>
-            <td><span ng-repeat="dm in danhmuc" ng-if="pro.id_danhmuc==dm.id">{{ dm.name }}</span></td>
-            <td><span ng-repeat="st in status" ng-if="pro.id_status == st.id">{{ st.name }}</span></td>
-            <td><button ng-click="onUpdate(pro.id)">Sửa</a></button></td>
-            <td><button ng-click="onDelete(pro.id)">Xóa</a></button></td>
-        </tr>
+       </thead>
+        <tbody class="table-group-divider">
+            <tr ng-repeat="pro in products">
+                <td>{{ pro.id }}</td>
+                <td>{{ pro.name }}</td>
+                <td>{{ pro.price | number}}</td>
+                <td class=" w-25"><img src="{{ pro.img }}" alt="" width="50%" height="auto" class=""></td>
+                <td>{{ pro.create_at }}</td>
+                <td>{{ pro.update_at }}</td>
+                <td><span ng-repeat="dm in danhmuc" ng-if="pro.id_danhmuc==dm.id">{{ dm.name }}</span></td>
+                            
+                <td><span ng-repeat="st in status" ng-if="pro.id_status == st.id" class="badge" ng-class="{'text-bg-success': st.id==1 ,'text-bg-info':st.id==2,'text-bg-danger':st.id==3}" >{{ st.name }}</span></td>
+                 
+                <td><button ng-click="onUpdate(pro.id)" class="btn btn-primary">Sửa</a></button></td>
+                <td><button ng-click="onDelete(pro.id)" class="btn btn-primary">Xóa</a></button></td>
+            </tr>
+        </tbody>
     </table>
 </div>
